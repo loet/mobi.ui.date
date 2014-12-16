@@ -1,4 +1,4 @@
-/* mobi.ui.date - v0.0.1 - 2014-12-16 */
+/* mobi.ui.date - v0.0.2 - 2014-12-16 */
 
 angular.module('mobi.ui.date.directives', [
     'mobi.ui.date.services'
@@ -32,7 +32,7 @@ angular.module('mobi.ui.date.directives', [
 
     .directive('mobiDate', function (ModelManager, SettingsManager) {
         return {
-            templateUrl: 'date/date.tpl.html',
+            templateUrl: 'date.tpl.html',
             restrict: 'E',
             transclude: true,
             scope: {

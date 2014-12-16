@@ -30,7 +30,7 @@ angular.module('mobi.ui.date.directives', [
 
     .directive('mobiDate', function (ModelManager, SettingsManager) {
         return {
-            templateUrl: 'date/date.tpl.html',
+            templateUrl: 'date.tpl.html',
             restrict: 'E',
             transclude: true,
             scope: {
