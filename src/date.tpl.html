@@ -1,0 +1,19 @@
+<div class="input-group mobi-date">
+    <!-- mobi-date-input -->
+    <input type="text" id="{{id}}" name="{{name}}" datepicker-popup="dd.MM.yyyy" show-button-bar="false"
+           ng-model="ngModel" ng-change="changeEvent()" is-open="opened" datepicker-options="dateOptions"
+           max-date="maxDate" min-date="minDate"
+           class="calendarinput form-control" placeholder="dd.mm.yyyy" maxlength="10"
+           tabindex="{{tabindex}}" ng-disabled="isDateDisabled()" mobi-date-input disabled-override-edit-mode="{{dateDisabled}}"
+           definition-scope-model="{{definitionScopeModel}}" definition="{{definition}}"
+           edit-mode
+            />
+    <span class="input-group-btn">
+        <a class="btn btn-default" id="{{id}}Calendar" ng-click="open($event)" ng-disabled="isPickerDisabled() || isDateDisabled()">
+            <i class="fa fa-calendar"></i>
+        </a>
+    </span>
+    <span class="input-group-btn" ng-transclude>
+
+    </span>
+</div>

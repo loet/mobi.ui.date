@@ -1,0 +1,17 @@
+{
+  "name": "mobi.ui.date",
+  "version": "0.0.1",
+  "homepage": "https://github.com/loet/mobi.ui.date",
+  "authors": [
+    "U110730 <ueli.loetscher@mobi.ch>"
+  ],
+  "description": "angular module providing DateService and directive",
+  "main": "src/lodashadapter.js",
+  "license": "N/A",
+  "devDependencies": {
+    "momentjs": "2.6.0",
+    "angular": "1.2.21",
+    "angular-mocks": "1.2.21",
+    "mobi.ui.momentadapter": "https://github.com/loet/mobi.ui.momentadapter.git#0.0.1"
+  }
+}
