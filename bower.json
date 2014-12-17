@@ -15,6 +15,10 @@
     "mobi.ui.momentadapter": "https://github.com/loet/mobi.ui.momentadapter.git#0.0.1",
     "mobi.ui.guid": "https://github.com/loet/mobi.ui.guid.git#0.0.1",
     "mobi.ui.settings": "https://github.com/loet/mobi.ui.settings.git#0.0.1",
-    "mobi.ui.model": "https://github.com/loet/mobi.ui.model.git#0.0.1"
+    "mobi.ui.model": "https://github.com/loet/mobi.ui.model.git#0.0.1",
+    "angular-uuid4": "0.1.0",
+    "bootstrap": "3.1.1",
+    "angular-bootstrap": "~0.12.0",
+    "font-awesome": "~4.2.0"
   }
 }

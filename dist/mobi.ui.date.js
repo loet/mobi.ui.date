@@ -1,4 +1,4 @@
-/* mobi.ui.date - v0.0.2 - 2014-12-17 */
+/* mobi.ui.date - v0.0.4 - 2014-12-17 */
 
 angular.module('mobi.ui.date.directives', [
     'mobi.ui.date.services'
@@ -30,7 +30,7 @@ angular.module('mobi.ui.date.directives', [
         };
     })
 
-    .directive('mobiDate', function (ModelManager, SettingsManager) {
+    .directive('mobiDate', function () {
         return {
             templateUrl: 'date.tpl.html',
             restrict: 'E',
@@ -79,28 +79,11 @@ angular.module('mobi.ui.date.directives', [
                         };
 
                         scope.isDateDisabled = function () {
-                            if (!angular.isDefined(attr.ignoreGlobalEditMode)) {
-                                //check if the edit mode is enabled
-                                var editMode = false,
-                                    model = ModelManager.getCurrentModel();
-                                if (model.settings && model.settings.editMode !== undefined) {
-                                    editMode = model.settings.editMode;
-                                }
-                                else {
-                                    editMode = SettingsManager.getSetting('editMode');
-                                }
-
-                                // edit mode overrides all
-                                if (!editMode) {
-                                    return true;
-                                }
-                            }
-
-                            return scope.dateDisabled;
+                            return false;
                         };
 
                         scope.isPickerDisabled = function () {
-                            return scope.pickerDisabled;
+                            return false;
                         };
                     }
                 };
