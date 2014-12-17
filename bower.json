@@ -12,6 +12,9 @@
     "momentjs": "2.6.0",
     "angular": "1.2.21",
     "angular-mocks": "1.2.21",
-    "mobi.ui.momentadapter": "https://github.com/loet/mobi.ui.momentadapter.git#0.0.1"
+    "mobi.ui.momentadapter": "https://github.com/loet/mobi.ui.momentadapter.git#0.0.1",
+    "mobi.ui.guid": "https://github.com/loet/mobi.ui.guid.git#0.0.1",
+    "mobi.ui.settings": "https://github.com/loet/mobi.ui.settings.git#0.0.1",
+    "mobi.ui.model": "https://github.com/loet/mobi.ui.model.git#0.0.1"
   }
 }

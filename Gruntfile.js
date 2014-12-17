@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 banner: '/* <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n\n'
             },
             dist: {
-                src: '<%= config.src %>',
+                src: '<%= config.src4concat %>',
                 dest: destinationFile
             }
         },

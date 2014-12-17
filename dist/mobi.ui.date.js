@@ -1,4 +1,4 @@
-/* mobi.ui.date - v0.0.2 - 2014-12-16 */
+/* mobi.ui.date - v0.0.2 - 2014-12-17 */
 
 angular.module('mobi.ui.date.directives', [
     'mobi.ui.date.services'
@@ -119,7 +119,7 @@ angular.module('mobi.ui.date', [
 
 
 angular.module('mobi.ui.date.services', [])
-    .factory('DateService', function (moment) {
+    .factory('DateService', function (moment, DateFactory) {
 
         function checkAndCorrectFirst(value) {
             var number;
@@ -290,11 +290,11 @@ angular.module('mobi.ui.date.services', [])
         }
 
         function currentDate() {
-            return new Date();
+            return DateFactory.currentDate();
         }
 
         function timestamp() {
-            return currentDate().getTime();
+            return DateFactory.timestamp();
         }
 
         return {
@@ -308,6 +308,21 @@ angular.module('mobi.ui.date.services', [])
             timestamp: timestamp
         };
 
+    })
+
+    .factory('DateFactory', function () {
+        function currentDate() {
+            return new Date();
+        }
+
+        function timestamp() {
+            return currentDate().getTime();
+        }
+
+        return {
+            currentDate: currentDate,
+            timestamp: timestamp
+        }
     })
 
 ;
