@@ -1,6 +1,6 @@
 {
   "name": "mobi.ui.date",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "angular module providing DateService and directive",
   "main": "Gruntfile.js",
   "scripts": {
